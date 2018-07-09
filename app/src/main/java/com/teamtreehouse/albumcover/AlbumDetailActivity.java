@@ -198,6 +198,6 @@ public class AlbumDetailActivity extends Activity {
                 palette.getVibrantColor(defaultFabColor),
                 palette.getLightVibrantColor(defaultFabColor)
         };
-        fab.setBackgroundTintList(new ColorStateList(states, colors));
+        //fab.setBackgroundTintList(new ColorStateList(states, colors));
     }
 }
