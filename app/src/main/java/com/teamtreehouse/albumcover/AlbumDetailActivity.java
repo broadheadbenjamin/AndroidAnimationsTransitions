@@ -95,7 +95,10 @@ public class AlbumDetailActivity extends Activity {
 
     private void setupTransitions() {
 //        getWindow().setEnterTransition(new Slide(Gravity.END));
-//        getWindow().setReturnTransition(new Fade());
+        Slide slide = new Slide(Gravity.BOTTOM);
+        slide.excludeTarget(android.R.id.statusBarBackground, true);
+        getWindow().setEnterTransition(slide);
+
         mTransitionManager = new TransitionManager();
         ViewGroup transitionRoot = detailContainer;
 
